@@ -31,7 +31,7 @@ function uploadData(toSave) {
   formData.append(
     'csvFile',
     new Blob([csvContent], { type: 'text/csv' }),
-    `tangoCC-NOconsent-${toSave.subjID}-${day}-${time}.csv`,
+    `orev-NOconsent-${toSave.subjID}-${day}-${time}.csv`,
   );
 
   // send the data to the server

@@ -22,7 +22,7 @@ function uploadData(toSave) {
   formData.append(
     'csvFile',
     new Blob([csvContent], { type: 'text/csv' }),
-    `tangoCC-consent-${toSave.subjID}-${day}-${time}.csv`,
+    `orev-consent-${toSave.subjID}-${day}-${time}.csv`,
   );
 
   // send the data to the server
