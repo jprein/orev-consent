@@ -7,10 +7,11 @@ const subjID = JSON.parse(localStorage.getItem('subjID')) || 'test';
 
 // Use the German/Leipzig default settings
 const webcam = 'true';
+const saving = 'upload';
 
 const handleContinueClick = (event) => {
   event.preventDefault();
-  window.location.href = `https://devpsy.web.leuphana.de/orev-pwa/orev.html?subjID=${subjID}&webcam=${webcam}`;
+  window.location.href = `https://devpsy.web.leuphana.de/orev-vn/instructions.html?subjID=${subjID}&webcam=${webcam}&saving=${saving}`;
 };
 
 button.addEventListener('click', handleContinueClick, { capture: false });

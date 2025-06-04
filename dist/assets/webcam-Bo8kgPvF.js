@@ -1,0 +1,1 @@
+import"./style-HX_bqIYk.js";const e=document.getElementById("continue-button"),n=JSON.parse(localStorage.getItem("subjID"))||"test",o="true",s="upload",a=t=>{t.preventDefault(),window.location.href=`https://devpsy.web.leuphana.de/orev-vn/instructions.html?subjID=${n}&webcam=${o}&saving=${s}`};e.addEventListener("click",a,{capture:!1});
